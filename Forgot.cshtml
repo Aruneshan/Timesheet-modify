@@ -1,0 +1,39 @@
+@model Login
+@{
+  ViewData["Title"]="Forgot";
+}
+<body >
+<div class="card text-center" style="width: 500px; height:550px" id="Forget">
+    <div class="card-header h5 text-white bg-primary">Password Reset</div>
+    <div class="card-body px-5">
+        <p class="card-text py-2">
+        Enter your Old Password to change the Password
+        </p>
+
+        <div class="form-outline text-left">
+            <label class="form-label" for="typeEmail">EmailID</label>
+            <input type="email" id="typeEmail" placeholder="Email ID" class="form-control my-3" />
+        </div>
+
+        <div class="form-outline text-left">
+            <label class="form-label" for="typeEmail">New Password</label>
+            <input type="email" id="typeEmail" placeholder="New Password" class="form-control my-3" />
+        </div>
+        
+        <div class="form-outline text-left">
+            <label class="form-label" for="typeEmail">Confirm Password</label>
+            <input type="email" id="typeEmail" placeholder="Confirm Password" class="form-control my-3" />
+        </div>
+
+        <div>
+        <a href="#" class="btn btn">Reset password</a>
+        <a href="#" class="btn btn">Reset</a></div>
+    </div>
+</div>
+</body>
+
+@section Scripts{
+
+    <partial name ="_ValidationScriptsPartial"/>
+}
+
